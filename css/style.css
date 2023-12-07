@@ -1,0 +1,46 @@
+/* */
+.services_image {
+    vertical-align: middle;
+}
+
+.services_div {
+    display:inline;
+    vertical-align:middle;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    color:DodgerBlue;
+    background-color: white;
+}
+
+#image_head {
+    background: url(../img/benjamin-davies-Oja2ty_9ZLM-unsplash.jpg) no-repeat center center; 
+    background-size: cover; 
+    height: 300px; 
+    text-align: center;
+}
+
+.principles {
+    width: 150px; height: 60px;
+}
+
+.principles:hover {
+    background-color: orange;
+    color: dodgerblue;
+}
+
+.text:hover {
+    color:DodgerBlue;
+    background-color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color:DodgerBlue;
+    background-color: white;
+}
