@@ -7,12 +7,24 @@
     display:inline;
     vertical-align:middle;
 }
+
+.text_form:hover {
+    background-color: dodgerblue;
+}
+
+.form-control {
+    color: dodgerblue;
+}
 .dropdown-item {
     color: white;
 }
 .dropdown-item:hover {
     color:DodgerBlue;
     background-color: white;
+}
+
+.contacts:hover {
+    background-color: dodgerblue;
 }
 
 #image_head {
