@@ -1,0 +1,108 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Refurbishment
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/free-vector/renovation-workers-repairing-apartment-repairmen-overalls-decorating-painting-walls-vector-illustration-excursion-people-culture-concept_74855-10144.jpg?w=1060&t=st=1710846407~exp=1710847007~hmac=c1f4729039b8766b677498ed7ac8ec0fcfb0b3551b981cfcc1237d0f0e85ac43') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <p class="text-break text-center display-6 mt-3">
+            Quality & Affordable Refurbishment London<br><br>We have a team of skilled and experienced tradespeople and construction experts in your area, providing a creative eye for detail on a plethora of property renovation projects.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+            <h2 class="text-center text-warning">Our trustworthy and affordable service includes:</h2><br>
+            <ul class="text-primary ms-4" style="font-size: 22px;">
+              <li>Full Home Refurbishment and Renovation.</li>
+  
+              <li>Flat Refurbishment and Renovation.</li>
+  
+              <li>Refurbishment Projects of all Sizes Taken On.</li>
+  
+              <li>Commercial Property Refurbishment and Renovation.</li>
+  
+              <li>Bathroom Renovation.</li>
+  
+              <li>Loft Conversions.</li>
+  
+              <li>Home and Office Extensions.</li>
+            </ul>
+
+            <h2 class="text-center text-warning">Quality Guaranteed</h2><br>
+            <p class="text-center text-primary" style="font-size: 23px;">
+              We guarantee a high quality of service and delivery for every single customer and every single property refurbishment project. Our customer service begins from the first time you contact us, and runs throughout the project and beyond. Our skilled team of tradespeople always work hard and are constantly on the look out for ways to improve and for innovative ways to make the process more effective.
+            </p>
+
+            <h2 class="text-center text-warning">Bespoke Service</h2><br>
+
+            <p class="text-center text-primary" style="font-size: 23px;">
+              When you first contact our friendly customer service team we'll arrange a consultation with you about your property. We have worked with many different types of properties and customers over the years and understand that every one is unique. We'll create a tailor-made plan of action, specific to your property, goals and budgets. All of this is based on a foundation of hard work and a passion for the craft that ensures you receive the quality service that you deserve.
+            </p>
+
+            <h2 class="text-center text-warning">On Time and On Budget</h2><br>
+
+            <p class="text-center text-primary" style="font-size: 23px;">
+              As mentioned, our detailed plans are created specific to you. We'll have a complete understanding of your budget for the property refurbishment, and the deadlines that we have in place to work with. Having all the information to hand ensures that we can create a roadmap for how the home renovation or flat refurbishment will work, understanding where problems may arise and how to counteract them without losing time or money.<br>
+
+              Our professionalism will help you unlock the potential of your property, whether you are looking to refurbish a house to live in, or you have property you wish to modernise in order to sell on for a profit or rent out to tenants for a profitable rental yield. We also work with property developers, estate agents and insurance companies that are looking to restore damaged properties.<br>
+
+              You've seen why we are reputed as such a trustworthy, effective and affordable property refurbishment company in London, so now is the time to pick up the phone and give us a call. Whether you are seeking home refurbishment for a house you live in, have a flat that you with to rent out to tenants, or you own a commercial property and require modernisation and a refit in order to sell or lease the space to businesses, we have the team that can help. To arrange a consultation with a friendly expert from London Refurbishment Company, call 0208 445 8677 and we'll be happy to begin drawing up plans for your property refurbishment project.
+            </p>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

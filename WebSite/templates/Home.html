@@ -1,0 +1,105 @@
+{% extends "Master_Home.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group
+{% endblock %}
+
+{% block content %}
+        <div class="row bg-primary text-white">
+            <h2 class="display-1 text-white text-center">Services offered by our company</h2>
+            <div class="col-md-6 col-ms-12 text-end" style="padding-bottom: 5px;">
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Cleaning/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/cleaning.png' %}" width="30" height="30">
+                    <span>
+                        Carpet Cleaning
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Removals&Storage/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/Removals_&_Storage.png' %}" width="30" height="30">
+                    <span>
+                        Removals & Storage
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Plumbing/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/plumbing.png' %}" width="30" height="30">
+                    <span>
+                        Plumbing
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="AutoLocksmith/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static 'img/locksmith.png' %}" width="30" height="30">
+                    <span>
+                        Auto Locksmith
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Gardening/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/mower.png' %}" width="30" height="30">
+                    <span>
+                        Gardening
+                    </span>
+                </button></a></div>
+            </div>
+            <div class="col-md-6 col-ms-12 text-start">
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="WasteRemovals/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/removed.png' %}" width="30" height="30">
+                    <span>
+                        Waste Removal
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Landscaping/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static 'img/Landscaping.png' %}" width="30" height="30">
+                    <span>
+                        Landscaping
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="LCE/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src="{% static '/img/drill.png' %}" width="30" height="30">
+                    <span>
+                        Loft conversion and extension
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="ElectricalServices/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src=" {% static '/img/light-bulb.png' %}" width="30" height="30">
+                    <span>
+                        Electrical Services
+                    </span>
+                </button></a></div>
+                <div style="padding-bottom: 10px; padding-top:10px;"><a href="Refurbishment/"><button  class="btn btn-primary text" style="border: 2px solid  #e7e7e7; width: 350px; height:50px" >
+                    <img class="middle_image" src=" {% static '/img/light-bulb.png' %}" width="30" height="30">
+                    <span>
+                        Refurbishment
+                    <span>
+                </button></a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-primary text-break text-center">
+                <p style="font-size:25px;">
+                    We at tripele <b class="text-warning">A</b> are happy to handle large-scale needs for best price <b class="text-warning">RUBBISH CLEARANCE</b>, no matter where you are across <b class="text-warning">LONDON</b>, the South East and the South West.<br>
+                    If you need cheap waste clearance  ‘near me’ the day in Bromley, we’ll be on hand and with you as soon as you need us.<br>
+                    Just let us know exactly what you’re looking for and we will deliver you a bespoke quote tailored to your expectations – each and every time. Why not give us a go?
+                </p>
+                <h2 class="display-2 text-primary text-center">The principles on which we base ourselves</h2>
+                <p><button class="btn btn-warning text-white principles" style="margin-right: 5px;">24/7</button>
+                    <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+                    <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+                    <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+                    <button class="btn btn-warning text-white principles">Construction Sites</button>
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="{% static 'img/car_1.jpg' %}" alt="Image 1" class="img-fluid" style="height: 495px;">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{% static 'img/Mark.jpg' %}" alt="Image 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{% static 'img/car_2.jpg' %}" alt="Image 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock%}

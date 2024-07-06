@@ -1,0 +1,105 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Removals & Storage
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/free-vector/loading-workman-carrying-boxes_74855-14096.jpg?w=996&t=st=1710839817~exp=1710840417~hmac=fe5dbee8c7f37c2a336c57c41ae1f4aa4bc3be4ffeba5f6d19157f697cf2d364') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <p class="text-break text-center display-6 mt-3 ms-4">
+            Moving home is the start of a new adventure. We specialise in planning house removals and our job is to keep things simple for you. <br><br>
+            Before the move, we’ll carry out a video survey – free of charge – to discuss all your requirements and get a detailed, fixed price quote to you the same or next day. <br><br> There’s no obligation and your home removals quote is valid for 30 days, so you can take your time to decide.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                  <option>Internaional</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+            <h2 class="text-center text-warning mb-4 mt-4">The Complete House Removals Service</h2><br>
+            <b class="text-primary ms-4" style="font-size: 22px;">With our complete house removals service, we can:</b>
+            <ul class="text-primary ms-4" style="font-size: 22px;">
+              <li>Help you de-clutter before you move with secure document shredding and recycling of unwanted furniture and belongings</li>
+
+              <li>Deliver hire crates and packing materials to your door</li>
+
+              <li>Deliver hire crates and packing materials to your door</li>
+
+              <li>Offer temporary or long term storage for anything you don’t want to take with you</li>
+
+              <li>Export, pack and ship items overseas</li>
+
+              <li>Move specialist items such as pianos and antiques</li>
+
+              <li>Use protective coverings to reduce scuffs during the move</li>
+
+              <li>Bring a qualified electrician to take down any light fittings you’re aren’t moving</li>
+
+              <li>Dismantle and/or reassemble furniture</li>
+
+              <li>Remove windows or doors for access, and make good afterwards</li>
+
+            </ul>
+          <h2 class="text-center text-warning">We Keep It Simple</h2><br>
+          
+          <p class="context">Ahead of your moving day, we’ll deliver hire crates and boxes to your door, so you can get everything packed. Or, if you prefer, you can use our personal packing service. You don’t even need to be at home because if you are busy, overseas or away during the planning and moving process, we are more than happy to take care of everything on your behalf.
+          Our home removals team includes an experienced foreman, who’ll be working from your detailed itinerary and floor plans and, of course, we’ll carefully label all your boxes so everything ends up in the right place.</p>
+
+          <h2 class="text-center text-warning">​Before we leave​</h2><br>
+
+          <p class="context">Your foreman will make a final inspection to ensure everything has gone as planned. We can reposition heavy items and take away as much packaging as possible.</p>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

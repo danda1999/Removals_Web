@@ -1,0 +1,106 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Landscaping
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/premium-vector/garden-work-vector-illustration-cartoon-flat-gardener-workers-people-working-with-gardening-machinery-trimming-green-tree-pruning-bush_169479-1891.jpg?w=1060') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <h2 class="text-center text-warning ms-1">Garden Landscaping Services</h2>
+          <p class="text-white ms-4" style="font-size:22px;">
+            All our landscape gardeners perform a wide variety of landscaping services, such as</p>
+            <ul class="ms-4" style="font-size:22px; ">
+              <li>Fence installation and repair - wooden or brick - they can install or repair it for you</li>
+              <li>Decking installation and repair - we can install softwood, hardwood and composite decking</li>
+              <li>You can benefit not only from the various materials we work with, but from design ideas, too</li>
+              <li>Planting - would it be a single plant that you want for your garden, or an annual planting scheme, we will give you a hand</li>
+              <li>Paving - get a newly laid patio or driveway</li>
+              <li>All landscapers are experienced in laying various types of paving stones and patio designs</li>
+              <li>hed installation and repair - we offer assembly services for store-bought sheds, as well as building new sheds from scratch</li>
+              <li>We can repair all shed parts, too</li>
+              <li>Resin bound and resin bonded surfaces - we can do both types of resin gravel surfacing, depending on your needs</li>
+            </ul>
+            <p class="text-white ms-4" style="font-size:22px;">Please don't hesitate to contact us today during our form next to this text.</p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-5 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-5">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+            <h2 class="text-center text-warning mb-4 mt-4">Our garden landscaping services</h2>
+            <ul class="text-primary ms-4" style="font-size: 22px;">
+              <li>Lawn laying - no matter if you need real turf or artificial grass</li>
+  
+              <li>All needed equipment comes with the team - as part of the Fantastic Services Quality Standard, Fantastic Gardeners use only equipment provided by established and well-known suppliers.</li>
+  
+              <li>All quotes are comprehensively written, with materials and labour included separately</li>
+  
+              <li><b>Turf Laying</b> - We can transform your outdoor space into a lush green lawn. You can choose from various types of real and artificial turf.</li>
+  
+              <li><b>Fence installation</b> - Do you want to increase the privacy, security or aesthetics of your property? Yes? Then you can choose from a wide variety of fence types we can provide you with. When the landscaping surveyor is at your property, he can give you the appropriate advice based on your needs.</li>
+  
+              <li><b>Deck Installation</b> - Refresh your overall garden landscape with a deck. You will increase the value of your home by making your outdoor area more attractive. A garden deck adds comfort to any home and is easy to maintain!</li>
+  
+              <li><b>Paving</b> - Have your new patio laid by experienced paving experts. We work with a variety of paving slabs, including Indian sandstone, limestone, block paving, and Bradstone.</li>
+
+              <li><b>Shed installation</b> - Get a new place to store your belongings with a small hobby shed. We have a wide variety of shed models and materials available. Also, the removal of your old shed can be arranged, if necessary.</li>
+
+              <li><b>Resin bound surfacing</b> - Get a stylish, low-maintenance driveway or patio. Only high-quality, resistant to cracking and durable materials are used. In addition, you can choose from a wide range of colours.</li>
+
+              <li><b>Garden planting</b> - Enjoy beautiful colours even in winter. We can create a planting scheme by sourcing all the necessary plants, materials, and equipment. Choose from various planting containers, bespoke window boxes, variable plants and colours depending on the season.</li>
+  
+            </ul>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

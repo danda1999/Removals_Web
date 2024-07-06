@@ -1,0 +1,113 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Electrical Services
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/premium-vector/lighting-electricity-energy-maintenance-service-technician-electrical-work-illustration_2175-8398.jpg?w=900') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <p class="text-break text-center display-6 mt-3">
+            Zillionaire group services is one of the UK’s leading electrical contractors. Our team of experienced and qualified electricians provide a wide range of commercial and domestic electrical installation and repair work in London and across the south of the UK.<br><br>
+            So, if you need a new socket installed, require a complete rewire for your home or business premises or need an EICR report for your rental property, the team of electricians at Zillionaire group will ensure the job is completed to the highest possible standard.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+          <h2 class="text-center text-warning">NEW ELECTRICAL INSTALLATIONS AND REWIRES</h2><br>
+
+          <p class="text-center text-primary" style="font-size: 23px;">
+              We provide a complete installation service, including new installs and rewires of existing installations. Our in-house team of electricians carry all work, including design, installation, testing, and commissioning.
+          </p>
+
+          <h2 class="text-center text-warning">COMMERCIAL ELECTRICIANS</h2><br>
+
+          <p class="text-center text-primary" style="font-size: 23px;">
+              We provide a complete installation service, including new installs and rewires of existing installations. Our in-house team of electricians carry all work, including design, installation, testing, and commissioning.
+          </p>
+
+          <h2 class="text-center text-warning">LANDLORD ELECTRICAL SERVICES LONDON AND THE SOUTH OF THE UK</h2><br>
+
+          <p class="text-center text-primary" style="font-size: 23px;">
+            Zillionaire Group services’s offer a complete design and installation service for 3 phase commercial electrical systems. All installation work is carried out by our in-house team of electricians and completed in line with BS7671.
+          </p>
+
+          <h2 class="text-center text-warning">EICR SERVICES</h2><br>
+
+          <p class="text-center text-primary" style="font-size: 23px;">
+            Electrical Installation Condition Reports (EICRs) are a legal requirement for all landlords. Zillionaire Group services specialise in providing EICRs for landlords and letting agents across the UK. We provide a fast and efficient EICR service throughout London and the south of the UK.
+          </p>
+
+          <h4 class="text-center text-warning">EICR REPORTS FOR COMMERCIAL PROPERTIES</h4><br>
+
+          <p class="text-center text-primary" style="font-size: 20px;">
+            Electrical Installation Condition Reports (EICRs) inspect the state of your commercial electrical systems to ensure they are safe for employees and members of the public. We offer a complete commercial EICR service to properties across London and the UK.
+          </p>
+
+          <h4 class="text-center text-warning">VISUAL ELECTRICAL INSPECTIONS</h4><br>
+
+          <p class="text-center text-primary" style="font-size: 20px;">
+            A visual electrical inspection can identify potentially dangerous faults. It is recommended that the electrical installations of commercial properties are visually inspected every 12 months. We offer a complete visual inspection service across London and the UK.
+          </p>
+
+          <h4 class="text-center text-warning">ELECTRICAL RECTIFICATIONS</h4><br>
+
+          <p class="text-center text-primary" style="font-size: 20px;">
+            We provide a complete range of rectification work to help bring your electrical systems back to safe working order. This includes fault finding, emergency repairs and rewires replacing faulty breakers, replacing faulty or damaged wiring, consumer unit replacement and emergency lighting repairs.
+          </p>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

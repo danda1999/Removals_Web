@@ -1,0 +1,156 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Loft conversion and Extension
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/premium-vector/male-engineer-uniform-with-toolbox-equipment-wrench-hand-cartoon-character-vector-illustration-business-service-personnel-repairing-system-maintenance_610956-750.jpg?w=900') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <p class="text-break text-center display-6 mt-3">
+            With space at such a premium in most London and home counties homes adding more bedroom and living space is a priority for many families. For some homeowners the best option is to combine a kitchen extension and loft conversion and complete both at the same time. By the end of the project the house is likely to have at least one extra bedroom and bathroom, an additional reception room and much larger kitchen as well as a downstairs wc. <br><br>
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+          <h2 class="text-center text-warning">What are the benefits of a house extension?</h2><br>
+          
+          <p class="text-center text-primary" style="font-size: 23px;">
+            Whether your aim is to increase the kitchen size, add living space, a utility room or create a ground floor bedroom to meet the needs of your family the advantages of a wraparound extension are numerous:
+          </p>
+
+          <ul class="text-primary ms-4" style="font-size: 22px;">
+            <li>Utilise otherwise unused  space to increase the size of the home.</li>
+
+            <li>Improved saturation of natural light in the downstairs areas through addition of skylights/lanterns.</li>
+
+            <li>Added flexibility to the layout of the home.</li>
+
+            <li>Create space for a large open plan kitchen diner and casual living space where everyone can spend time together.</li>
+
+            <li>Add space to work from home.</li>
+
+            <li>A generously sized utility room can be added to free up space in the kitchen and reduce noise from washing machines/dryers.</li>
+
+            <li>Add a boot room to reduce dirt and clutter cominh into the house.</li>
+
+            <li>Create much needed extra storage space.</li>
+
+            <li>A new patio at the rear or private courtyard can be created at the side.</li>
+
+            <li>Extra 16m2 to 60m2 of additional space.</li>
+
+            <li>Potential for additional space to be added to the first floor too in some circumstances.</li>
+
+            <li>If the garden space is small this is a good solution.</li>
+
+            <li>Extra storage and usable space for everyone in the home to enjoy.</li>
+
+          </ul>
+
+          <h2 class="text-center text-warning">What are the benefits of a Loft Conversion?</h2><br>
+          
+          <p class="text-center text-primary" style="font-size: 23px;">
+            The benefits of a loft conversion are numerous, whether you are looking to add an extra bedroom and bathroom for a growing family, to create space for family memebers in a multigenerational household or to add an extra room to allow for a home office.
+          </p>
+
+          <ul class="text-primary ms-4" style="font-size: 22px;">
+            <li>Add 40m3 of additional space to a terraced house of 50m3 to a semi-detached or detached home.</li>
+
+            <li>Increase the number of bathrooms in the house with an en-suite or additional bathroom.</li>
+
+            <li>Maximise storage space in the home with eaves storage options.</li>
+
+            <li>Create a dressing room area.</li>
+
+            <li>A nice extended view over the garden.</li>
+
+            <li>Enlarge the capacity of the house by adding at least one extra bedroom.</li>
+
+            <li>Unlock unused potential in your current home with the upheavel and cost of moving house.</li>
+
+            <li>Likely increase in the value of the property by adding an extra bedroom.</li>
+
+            <li>Improved levels of natural light.</li>
+
+          </ul>
+
+          <h2 class="text-center text-warning">What are the benefits of combining a house extension and loft conversion?</h2><br>
+
+          <ul class="text-primary ms-4" style="font-size: 22px;">
+            <li>The house will be developed to its full potential.</li>
+
+            <li>Improved saleability and curb appeal.</li>
+
+            <li>Efficiency gains of having the designs and structural calculations done as one project.</li>
+
+            <li>Additional bedroom(s) bathrooms and living space.</li>
+
+            <li>Enlarged social and kitchen space.</li>
+
+            <li>Efficiency and cost savings during the build process.</li>
+
+            <li>Complete your house renovation in one go.</li>
+
+            <li>Better insulation and thermal values.</li>
+
+            <li>Transform the property without having to move.</li>
+
+          </ul>
+
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

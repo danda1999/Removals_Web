@@ -1,0 +1,97 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Plumbing
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/free-vector/professional-worker-fixing-bathroom_23-2148656904.jpg?t=st=1710839566~exp=1710843166~hmac=1b3a79dcf41c842662ba05c737dd2ffd46790cbd1d99a1c6dc4a4003fa95074c&w=996') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <p class="text-break text-center display-6 mt-3">
+            Upholstery and Carpet Cleaning<br><br>
+            Upholstery and Carpet Cleaning Service London<br><br>
+            Furniture and carpets are hotspots for germs in the workplace with germs and bacteria being able to settle in to soft surfaces. Keeping them clean is an easy way to lower the risk of health issues which is where we come in.<br><br>
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Carpet rooms number" name="carpet">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                    <select class="form-select" name="staircase">
+                        <option value="" selected disabled>Staircase YES/NO</option>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </select>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+            <h2 class="text-center text-warning">Why Keep Your Carpets and Upholstery Clean</h2><br>
+          
+            <p class="text-center text-primary" style="font-size: 23px;">Carpets are a high traffic area in any workplace with staff and clients regularly walking back and forth on them. 
+                The fibres absorb dirt and germs but when the fibres start to clump together, they can’t do their job properly and pollutants and allergens rise into the air. 
+                A buildup of bacteria can also be to the detriment of the carpet, making it more vulnerable to wear and tear.<br>
+                Keeping your carpets clean is vital to maintaining the health of your workers or your family members. 
+                A clean carpet ensures your staff or family members aren’t picking up or transmitting as many germs and it also protects your clients or visitors. 
+                It can be beneficial to the overall appearance of your workplace/home as well. A clean carpet can look fluffed up and well-cared for if it has long, thick fibres or professional and smart if you have a shorter cut. 
+                This enhances your image, allowing you to present yourself as respectable and reliable to potential clients or your home visitors.<br>
+                The same goes for any upholstery or furniture your workplace/home may have. 
+                Germs can live on the soft fibres so keeping them clean protects you and your clients when you sit down to work or have a meeting and ensures that you’re making sure every last aspect of your workplace/home is in top condition.
+            </p>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}

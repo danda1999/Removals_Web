@@ -1,0 +1,117 @@
+{% extends "Master_Services.html" %}
+{% load static %}
+
+{% block title %}
+    Zillionaire Group - Gardening
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col" style="background: url('https://img.freepik.com/free-vector/gradient-people-planting-tree-illustration_23-2149202056.jpg?w=996&t=st=1710840568~exp=1710841168~hmac=e6acd675c7f73e75c858051be0ebc7f02e655596894b353c6a4613dff8d3bdc0') no-repeat center center; background-size:800px 400px; height: 400px; text-align: center;">
+        </div>
+      </div>
+      <div class="row bg-primary">
+        <div class="col-md-6 col-sm-12 text-white ">
+          <h2 class="text-center text-warning ms-1">Garden maintenance service that meets your needs</h2>
+          <p class="text-white ms-4" style="font-size:22px;">
+            Garden maintenance service that meets your needs.<br><br>
+            Our garden maintenance services are delivered with your comfort and convenience in mind.<br><br>
+            Book as many hours as you need for a day and time that work best for you.<br><br>
+            Please don't hesitate to contact us today during our form next to this text.
+          </p>
+          <ul class="text-white ms-4" style="font-size: 22px;">
+            <li>Carrying out the work based on your priorities & your booked time</li>
+
+            <li>All tools and equipment provided</li>
+
+            <li>Charge only for the time spent on site</li>
+
+            <li>Providing materials upon request (plants, soil, fertilizer)</li>
+
+            <li>Weekly, fortnightly, or monthly regular service</li>
+          </ul>
+          <h3 class="text-warning ms-2">complete garden care</h3>
+        </div>
+        <div class="col-md-6 col-sm-12 text-white">
+          <p class="text-center display-5">Requst a quote or call-back</p>
+            <form class="mt-4" method="POST">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Name" name="name">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-md-4 pe-sm-3 pb-3 pt-5">
+                  <input type="text" class="form-control" placeholder="Adress + postcode" name="PSC">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Enter email" name="email">
+                </div>
+                <div class="col-md-6 col-sm-12 pe-sm-4 pb-3">
+                  <input type="text" class="form-control" placeholder="Phone" name="phone">
+                </div>
+              </div>
+              <div class="row mt-4 mb-4 pe-md-4 ps-md-2 pe-sm-4 pb-3">
+                <select class="form-select" name="select">
+                  <option value="" selected disabled>Select Services</option>
+                  <option>Domestic</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+              <div class="row mt-4">
+                <div class="col pe-4">
+                  <textarea class="form-control" placeholder="Message" rows="5" id="comment" name="text"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4 mb-4">
+                <div class="col">
+                  <button type="submit" class="btn bg-warning text-white">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bg-white text-break">
+          <h2 class="text-center text-warning mb-4 mt-4">Here’s what our domestic gardening service includes</h2>
+          <ul class="text-primary ms-4" style="font-size: 22px;">
+            <li>Pruning of smaller trees, bushes and shrubs (up to 4 m)</li>
+
+            <li>Leaf clearing and garden tidy-up</li>
+
+            <li>Lawn mowing, fertilising and reseeding</li>
+
+            <li>Hedge trimming and ivy pruning (up to 4 m)</li>
+
+            <li>Manual weed removal and chemical weed control (upon request)</li>
+
+            <li>Edging</li>
+
+            <li>Pressure washing with powerful jet washers</li>
+
+          </ul>
+          <h2 class="text-center text-warning mb-4 mt-4">Garden maintenance by experienced local gardeners</h2>
+          <b class="text-primary ms-4" style="font-size: 22px;">We’ll send our team of gardeners who have gone through professional training to handle your service.</b>
+          <ul class="text-primary ms-4" style="font-size: 22px;">
+            <li>Many years of experience in gardening services</li>
+
+            <li>Fully vetted and DBS-checked gardeners</li>
+
+            <li>Public liability insurance</li>
+
+            <li>Working even in bad weather</li>
+
+          </ul>
+          <h2 class="text-center text-warning mt-6 mb-4">Please don't hesitate to contact us today during our form over this text.</p>
+        </div>
+      <div class="bg-primary text-break text-center">
+        <h2 class="display-2 text-white text-center">The principles on which we base ourselves</h2>
+        <p class="pb-4">
+          <button class="btn btn-warning text-white principles " style="margin-right: 5px;">24/7</button>
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Low Cost</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Waste clearance</button> 
+          <button class="btn btn-warning text-white principles" style="margin-right: 5px;">Garage clearance</button> 
+          <button class="btn btn-warning text-white principles">Construction Sites</button>
+        </p>
+      </div>
+{% endblock%}
