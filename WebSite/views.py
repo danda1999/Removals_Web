@@ -10,6 +10,7 @@ def home(request):
     template = loader.get_template('Home.html')
     return HttpResponseForbidden(template.render())
 
+@csrf_exempt
 def Contacts(request):
     
     if request.method == "POST":
@@ -269,6 +270,30 @@ def LCE(request):
         )
         
         subject = 'Loft conversion and Extension'
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list=[settings.RECIPIENT_ADDRESS]
+        send_mail( subject, mail_body, email_from, recipient_list)
+    
+    template = loader.get_template('LCE.html')
+    return HttpResponseForbidden(template.render())
+
+@csrf_exempt
+def WEB(request):
+    
+    if request.method == "POST":
+        
+        name = request.POST.get('name')
+        psc = request.POST.get('PSC')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        select = request.POST.get('select')
+        text = request.POST.get('text')
+        
+        mail_body = "Name: {}\nAdress: {}\nEmail: {}\nPhone: {}\nSelect service: {}\nMessage: {}\n".format(
+            name, psc, email, phone, select, text
+        )
+        
+        subject = 'Webpage Developing'
         email_from = settings.EMAIL_HOST_USER
         recipient_list=[settings.RECIPIENT_ADDRESS]
         send_mail( subject, mail_body, email_from, recipient_list)
