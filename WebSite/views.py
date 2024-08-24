@@ -1,14 +1,14 @@
-from django.http import HttpResponseForbidden
+from django.http import HttpResponse
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
    
 from django.conf import settings
 from django.core.mail import send_mail
 
-
+@csrf_exempt
 def home(request):
     template = loader.get_template('Home.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Contacts(request):
@@ -32,7 +32,7 @@ def Contacts(request):
         send_mail( subject, mail_body, email_from, recipient_list)
         
     template = loader.get_template('Contact.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def AutoLocksmith(request):
@@ -57,7 +57,7 @@ def AutoLocksmith(request):
         send_mail( subject, mail_body, email_from, recipient_list)
  
     template = loader.get_template('AutoLocksmith.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Removals_and_Storage(request):
@@ -81,7 +81,7 @@ def Removals_and_Storage(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Removals.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Cleaning(request):
@@ -107,7 +107,7 @@ def Cleaning(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Cleaning.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Plumbing(request):
@@ -131,7 +131,7 @@ def Plumbing(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Plumbing.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Waste_Removals(request):
@@ -155,7 +155,7 @@ def Waste_Removals(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Waste_Removal.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Gardening(request):
@@ -179,7 +179,7 @@ def Gardening(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Gardening.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Electrical(request):
@@ -203,7 +203,7 @@ def Electrical(request):
         send_mail( subject, mail_body, email_from, recipient_list)
         
     template = loader.get_template('ElectricalServices.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Landscaping(request):
@@ -227,7 +227,7 @@ def Landscaping(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Landscaping.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def Refurbishment(request):
@@ -251,7 +251,7 @@ def Refurbishment(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('Refurbishment.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def LCE(request):
@@ -275,7 +275,7 @@ def LCE(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('LCE.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
 
 @csrf_exempt
 def WEB(request):
@@ -299,4 +299,4 @@ def WEB(request):
         send_mail( subject, mail_body, email_from, recipient_list)
     
     template = loader.get_template('LCE.html')
-    return HttpResponseForbidden(template.render())
+    return HttpResponse(template.render())
