@@ -2,14 +2,14 @@ from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
 class StaticViewSitemap(Sitemap):
-    priority = 0.5
-    changefreq = 'weekly'
+    priority = 0.8
+    changefreq = 'monthly'
 
     # Definování URL, které nejsou v databázi
     def items(self):
-        return ['Home', 'Contacts', 'AutoLocksmith',
-                'Removals & Storage', 'Cleaning', 'Plumbing',
-                'Waste Removals', 'Gardening', 'Electrical Services',
+        return ['', 'Contacts', 'AutoLocksmith',
+                'Removals&Storage', 'Cleaning', 'Plumbing',
+                'WasteRemovals', 'Gardening', 'ElectricalServices',
                 'Landscaping', 'Refurbishment', 'LCE']  # název URL v urlpatterns
 
     # Vytvoření absolutní URL pro každou stránku
