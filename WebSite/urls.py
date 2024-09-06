@@ -14,4 +14,5 @@ urlpatterns = [
     path('Landscaping/', views.Landscaping, name='Landscaping'),
     path('Refurbishment/', views.Refurbishment, name='Refurbishment'),
     path('LCE/', views.LCE, name='LCE'),
+    path('robots.txt', views.robots_txt),
 ]

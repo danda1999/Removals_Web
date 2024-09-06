@@ -300,3 +300,11 @@ def WEB(request):
     
     template = loader.get_template('LCE.html')
     return HttpResponse(template.render())
+
+def robots_txt(request):
+    lines = [
+        "User-Agent: *",
+        "Disallow: /admin/",
+        "Disallow: /private/",
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")
