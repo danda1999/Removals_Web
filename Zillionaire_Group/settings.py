@@ -41,8 +41,6 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = ['https://zillionaire-group.uk','https://*.zillionaire-group.uk']
 
-SITEMAP_URL_NAME = 'sitemap'
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,8 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
-    'django.contrib.sites',
-    'corsheaders',
     'WebSite',
     'bootstrap5',
 ]
@@ -70,7 +66,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'Zillionaire_Group.urls'
