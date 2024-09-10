@@ -304,7 +304,6 @@ def WEB(request):
 def robots_txt(request):
     lines = [
         "User-Agent: *",
-        "Disallow: /admin/",
-        "Disallow: /private/",
+        "Sitemap: https://zillionaire-group.uk/sitemap.xml"
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
